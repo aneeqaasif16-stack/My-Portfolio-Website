@@ -1,0 +1,290 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3EDFC;
+    color: #333333;
+    line-height: 1.7;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #FFFFFF;
+    margin: 35px;
+    padding: 60px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px rgba(80, 50, 120, 0.08);
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hero-text h1 {
+    color: #7550A8;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    color: #292333;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.hero-text h3 {
+    color: #9069C3;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #555555;
+}
+
+.hero-image {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #E9DDFB;
+    box-shadow: 0 8px 25px rgba(90, 55, 130, 0.15);
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background-color: #FFFFFF;
+    margin: 35px;
+    padding: 50px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px rgba(80, 50, 120, 0.06);
+}
+
+.about h2 {
+    color: #7550A8;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.about p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+/* WHAT I DO SECTION */
+
+.what-i-do {
+    background-color: #FFFFFF;
+    margin: 35px;
+    padding: 50px;
+    border-radius: 22px;
+}
+
+.what-i-do h2 {
+    color: #7550A8;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.what-i-do > p {
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.what-i-do > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-height: 150px;
+    background-color: #F5F0FC;
+    margin: 10px 1%;
+    padding: 22px;
+    border-radius: 15px;
+    border-left: 4px solid #9069C3;
+    transition: 0.3s;
+}
+
+.what-i-do > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(90, 55, 130, 0.12);
+}
+
+.what-i-do h3 {
+    color: #7550A8;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.what-i-do > div p {
+    color: #555555;
+    font-size: 15px;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+    background-color: #FFFFFF;
+    margin: 35px;
+    padding: 50px;
+    border-radius: 22px;
+}
+
+.skills h2 {
+    color: #7550A8;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.skills p {
+    color: #555555;
+    margin-bottom: 25px;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills li {
+    background-color: #E9DDFB;
+    color: #583A83;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    background-color: #7550A8;
+    color: #FFFFFF;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    background-color: #FFFFFF;
+    margin: 35px;
+    padding: 50px;
+    border-radius: 22px;
+    box-shadow: 0 5px 20px rgba(80, 50, 120, 0.06);
+}
+
+.contact h2 {
+    color: #7550A8;
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+.contact p {
+    color: #555555;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+
+.contact h3 {
+    color: #9069C3;
+    font-size: 22px;
+    margin: 25px 0 15px;
+}
+
+/* THANK YOU SECTION */
+
+.thank-you {
+    background: linear-gradient(135deg, #7550A8, #A987D1);
+    color: #FFFFFF;
+    margin: 35px;
+    padding: 60px 30px;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.thank-you h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.thank-you p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.thank-you h3 {
+    font-size: 22px;
+    color: #F1E5FF;
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 15px;
+        padding: 30px 20px;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 27px;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about,
+    .what-i-do,
+    .skills,
+    .contact,
+    .thank-you {
+        margin: 15px;
+        padding: 30px 20px;
+    }
+
+    .what-i-do > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .skills ul {
+        gap: 10px;
+    }
+
+    .thank-you h2 {
+        font-size: 27px;
+    }
+}
